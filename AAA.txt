@@ -1,1 +1,1 @@
-lista in branciul A s-a schimbat
+lista  A s-a schimbat
