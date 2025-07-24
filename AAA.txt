@@ -1,1 +1,1 @@
-lista  A s-a schimbat
+lista  A s-a schimbat si modificat in master
