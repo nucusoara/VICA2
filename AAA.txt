@@ -1,3 +1,1 @@
-lista  A s-a schimbat si modificat in master  VICA 1
-+ modificat in branchCopiat                   VICA 2
-
+modificat pt github
