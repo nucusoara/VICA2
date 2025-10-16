@@ -1,12 +1,75 @@
 body {
-  background-color: powderblue;
+  background-color: LightYellow;
 }
 h1 {
   color: gray;
 }
+
+h2 {
+  color: orange;
+}
+
 h4 {
   color: green;
 }
+
 p {
   color: red;
+}
+p1 {
+  color: red;
+text-align:center;
+}
+pre {
+  color: blue;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: cyan;
+}
+
+tr:nth-child(even) 
+{
+  background-color: #D6EEEE;
+}
+
+.center-text {
+	  display: block;
+      text-align: center;
+    }
+	
+div {
+  background-color: cyan;
+  width:300px;
+  
+ 
+}
+.vica {
+  background-color: tomato;
+  color: white;
+  border: 1px solid black;
+ 
+  padding: 20px;
+  width:260px;
+}
+iframe {
+  margin: auto;
+  width: 60%;
+  
+  display: block;
 }
