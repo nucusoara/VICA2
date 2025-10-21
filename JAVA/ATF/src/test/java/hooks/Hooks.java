@@ -1,7 +1,6 @@
 package hooks;
 
 import Util.Singleton;
-import io.cucumber.core.runtime.SingletonRunnerSupplier;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -11,7 +10,6 @@ import org.apache.logging.log4j.Logger;
 import stepDefinition.AbstractStepDef;
 
 import static Actions.Action.takeScreenshot;
-
 
 public class Hooks extends AbstractStepDef {
 
@@ -26,7 +24,7 @@ public class Hooks extends AbstractStepDef {
         Singleton.closeDriver();
     }
     @AfterStep("@UI")
-    public void takeSreenShot(Scenario scenario){
+    public void takeScreenShot(Scenario scenario){
         log.info("take a screenshot before steps");
         takeScreenshot(scenario, driver);
     }

@@ -1,4 +1,5 @@
 Feature: Loghin functionality test
+  @Run @UI
   Scenario: Positive login page testing
     Given user insert username
     And user insert password

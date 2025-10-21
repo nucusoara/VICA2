@@ -12,7 +12,7 @@ public class Singleton extends AbstractStepDef {
         if (driver == null) {
             System.setProperty(String.valueOf(SET_PROPERTY_CHROME), chromeDriver);
             driver = new ChromeDriver();
-        }
+       }
         return driver;
     }
     public static void closeDriver(){

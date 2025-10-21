@@ -34,6 +34,7 @@ public class Action {
     public static void navigate(String navigateTo, WebDriver driver){
         driver.get(navigateTo);
     }
+
     public static void takeScreenshot(Scenario scenario, WebDriver driver){
         try{
             String screenshotName=generateScreenshotName(scenario.getName());
@@ -41,7 +42,8 @@ public class Action {
             createDiretoryIfNotExists(directoryName);
             File file= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(file, new File(directoryName+screenshotName+".png"));
-        }catch (Exception e){
+        }
+        catch (java.lang.Exception e){
             System.out.println("Screenshot nu lucreaza "+e);
 
         }

@@ -5,11 +5,16 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
+import static Actions.Action.navigate;
+import static stepDefinition.AbstractStepDef.driver;
+import static stepDefinition.AbstractStepDef.loginPageUrl;
+
 public class LoginFunctionality {
 
     @Given("user insert username")
-    public void insertUserName(){
-
+    public void insertUserName() throws InterruptedException {
+        navigate(loginPageUrl, driver);
     }
 
     @And("user insert password")
